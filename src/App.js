@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import './index.css'
 import './App.css';
+import Heading from './Page/Page';
+import Breadcrumb from './Components/Breadcrumbs';
+import Flashcard from './Components/Flashcards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-20 my-5 flex flex-col gap-14">
+      <Heading />
+      <Breadcrumb />
+      <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#06286E] to-[#164EC0]">
+        Relations and Functions( Mathematics )
+      </div>
+      <Flashcard/>
     </div>
   );
 }
