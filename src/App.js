@@ -2,7 +2,9 @@ import './index.css'
 import './App.css';
 import Heading from './Page/Page';
 import Breadcrumb from './Components/Breadcrumbs';
-import Flashcard from './Components/Flashcards';
+import Flashcards from './Components/Flashcards';
+import Publishbar from './Components/Publishbar';
+import Accordian from './Components/Accordian';
 
 function App() {
   return (
@@ -12,7 +14,14 @@ function App() {
       <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#06286E] to-[#164EC0]">
         Relations and Functions( Mathematics )
       </div>
-      <Flashcard/>
+      <Flashcards />
+      <Publishbar />
+      <div></div>
+      <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#06286E] to-[#164EC0]">
+        FAQ
+      </div>
+      <Accordian/>
+      <div className='grow'></div>
     </div>
   );
 }
