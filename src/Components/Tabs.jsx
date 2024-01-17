@@ -1,6 +1,6 @@
 function Tabs() {
   return (
-    <div>
+    <div className="mx-56 px-64">
       <div className="sm:hidden">
         <label htmlFor="Tab" className="sr-only">
           Tab
